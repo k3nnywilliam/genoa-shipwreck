@@ -3,7 +3,7 @@
 ![Alt text](screenshots/shipwreck-record.gif?raw=true "Title")
 
 ### Project Description
-The purpose of this project is to develop a web-based Lidar scan viewer of the wreck of the City of Genoa in Lake Huron, Detroit. This project was made with CesiumJS.
+The purpose of this project is to develop a web-based Lidar scan viewer of the wreck of the City of Genoa in Lake Huron, Detroit. This project was made with CesiumJS and Resium.
 
 Read the blog for more info:
 https://glbottommapping.glos.org/2021/03/shipwreck-city-of-genoa-examined-by-ultra-high-resolution-underwater-lidar-in-southern-lake-huron/
@@ -28,6 +28,7 @@ The underwater lidar data is owned by:
 
 ### Download data via FTP
 There are 10 laz files that can be downloaded via ftp url:
+
 ftp://ftp.coast.noaa.gov/pub/DigitalCoast/lidar4_z/geoid18/data/9302
 
 ### Laz files to point clouds
