@@ -71,8 +71,8 @@ module.exports = {
   plugins: [
     new HtmlWebpackPlugin({
       hash: true,
-      title: 'LIDAR project',
-      header: 'LIDAR Project',
+      title: 'City of Genoa',
+      header: 'City of Genoa',
       //favicon: 'src/favicon.ico',
       template: 'src/index.html',
       filename: 'index.html',

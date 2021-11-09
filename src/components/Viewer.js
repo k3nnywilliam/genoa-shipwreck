@@ -22,17 +22,21 @@ function LidarViewer() {
       full
       ref={e => {
         viewer = e && e.cesiumElement;
-      }} 
-      timeline={false} 
-      homeButton={false} 
+      }}
+      timeline={false}
+      homeButton={false}
       vrButton={false}
-      infoBox={false} 
+      infoBox={false}
       geocoder={false}
       animation={false}
       baseLayerPicker={false}
-      navigationHelpButton={true} 
+      navigationHelpButton={true}
       scene3DOnly={true}>
-      <Cesium3DTileset url={IonResource.fromAssetId(667344)} onReady={handleReady} />
+      <Cesium3DTileset
+        url={IonResource.fromAssetId(667344)}
+        onReady={handleReady} 
+        style = {new Cesium.Cesium3DTileStyle({color : 'color("blue")'})}
+        />
     </Viewer>
   );
 }
