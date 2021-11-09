@@ -1,0 +1,48 @@
+{
+  "name": "lidar-project",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "webpack-dev-server",
+    "dev": "webpack --mode production",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@loaders.gl/core": "^3.0.12",
+    "@loaders.gl/gltf": "^3.0.12",
+    "@loaders.gl/las": "^3.0.12",
+    "cesium": "^1.87.0",
+    "deck.gl": "^8.6.3",
+    "dotenv": "^10.0.0",
+    "express": "^4.17.1",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "react-hot-loader": "^4.13.0",
+    "react-map-gl": "^6.1.17",
+    "resium": "^1.14.3",
+    "webpack": "^5.62.1",
+    "webpack-cli": "^4.9.1",
+    "webpack-dev-server": "^4.4.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.16.0",
+    "@babel/preset-env": "^7.16.0",
+    "@babel/preset-react": "^7.16.0",
+    "babel-jest": "^27.3.1",
+    "babel-loader": "^8.2.3",
+    "copy-webpack-plugin": "^9.0.1",
+    "css-loader": "^6.5.1",
+    "dotenv-webpack": "^7.0.3",
+    "file-loader": "^6.2.0",
+    "html-webpack-plugin": "^5.5.0",
+    "html-webpack-tags-plugin": "^3.0.2",
+    "jest": "^27.3.1",
+    "jest-cli": "^27.3.1",
+    "react-test-renderer": "^17.0.2",
+    "style-loader": "^3.3.1",
+    "url-loader": "^4.1.1"
+  }
+}
