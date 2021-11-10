@@ -1,4 +1,5 @@
 let path = require('path');
+let os = require('os');
 let express = require('express');
 let app = express(), 
           DIST_DIR=__dirname,
@@ -13,5 +14,5 @@ app.get('*', (req, res) => {
 app.set('port', process.env.PORT || 5000);
 
 let server = app.listen(app.get('port'), function() {
-  console.log('listening on port ', server.address().port);
+  console.log(`Server running at http://${os.hostname()}:${server.address().port}/`);
 });
