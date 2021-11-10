@@ -1,21 +1,13 @@
 FROM node:16
-
 # Create app directory
-WORKDIR /usr/src/app
-
+WORKDIR /app
 COPY package*.json ./
-
 RUN npm install
-# If you are building your code for production
-# RUN npm ci --only=production
-
-RUN npm buildProd
-
-# Bundle app source
 COPY . .
+RUN npm run buildProd
 
 ENV NODE_ENV=production
 ENV PORT=8080
 
 EXPOSE 8080
-CMD [ "node", "dist/server.js" ]
+CMD [ "npm", "run", "start"]
