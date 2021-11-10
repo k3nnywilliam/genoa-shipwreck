@@ -10,7 +10,7 @@ app.get('*', (req, res) => {
   res.sendFile(HTML_FILE)
 });
 
-app.set('port', process.env.PORT || 8080);
+app.set('port', process.env.PORT || 5000);
 
 let server = app.listen(app.get('port'), function() {
   console.log('listening on port ', server.address().port);
