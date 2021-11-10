@@ -64,7 +64,7 @@ module.exports = {
             hash: true,
             title: 'City of Genoa',
             header: 'City of Genoa',
-            //favicon: 'src/favicon.ico',
+            favicon: 'src/favicon.ico',
             template: 'src/index.html',
             filename: 'index.html',
             inject: 'body'
