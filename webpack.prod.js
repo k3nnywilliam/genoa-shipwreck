@@ -1,6 +1,7 @@
 const { merge } = require('webpack-merge');
 const common = require('./webpack.common.js');
 const TerserPlugin = require('terser-webpack-plugin');
+const Dotenv = require('dotenv-webpack');
 
 module.exports = merge(common, {
     mode: 'production',
@@ -12,5 +13,8 @@ module.exports = merge(common, {
           parallel: true,
         }),
       ]
-    }
+    },
+    plugins: [
+      new Dotenv()
+    ],
   });
