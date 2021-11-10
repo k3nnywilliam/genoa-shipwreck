@@ -69,9 +69,7 @@ module.exports = {
             filename: 'index.html',
             inject: 'body'
         }),
-        new Dotenv({
-            path: './.env', // Path to .env file (this is the default)
-        }),
+        new Dotenv(),
         new CopyWebpackPlugin({
             patterns: [
                 {
