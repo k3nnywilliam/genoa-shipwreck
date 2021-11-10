@@ -13,14 +13,14 @@ module.exports = {
   entry: './src/index.js',
   devServer: {
     static: {
-      directory: path.join(__dirname, './dist'),
+      directory: path.join(__dirname, 'public'),
     },
     hot:true,
     client: {
       progress: true,
     },
     compress: true,
-    port: 8080,
+    port: process.env.PORT,
   },
   performance: {
     hints: false,
@@ -28,7 +28,9 @@ module.exports = {
     maxAssetSize: 512000
   },
   output: {
-    filename: 'bundle.[fullhash].js',
+    path: path.join(__dirname, 'dist'),
+    publicPath: '/',
+    filename: '[name].js',
     clean: true
   },
   devtool: 'inline-source-map',
@@ -76,8 +78,10 @@ module.exports = {
       //favicon: 'src/favicon.ico',
       template: 'src/index.html',
       filename: 'index.html',
+      excludeChunks: ['server'],
       inject: 'body'
     }),
+    new webpack.NoEmitOnErrorsPlugin(),
     new Dotenv({
       path: './.env', // Path to .env file (this is the default)
     }),
