@@ -82,9 +82,7 @@ module.exports = {
       inject: 'body'
     }),
     new webpack.NoEmitOnErrorsPlugin(),
-    new Dotenv({
-      path: './.env', // Path to .env file (this is the default)
-    }),
+    new Dotenv(),
     new CopyWebpackPlugin({
       patterns: [
         {
