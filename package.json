@@ -1,17 +1,17 @@
 {
   "name": "lidar-project",
   "version": "1.0.0",
-  "description": "",
+  "description": "Lidar Viewer for City of Genoa Shipwreck Data",
   "main": "index.js",
   "scripts": {
-    "start": "node ./dist/server.js",
+    "start": "pm2-runtime start ecosystem.config.js --env production",
     "buildDev": "rm -rf dist && webpack --mode development --config webpack.dev.js && webpack --mode development --config webpack.server.js",
     "buildProd": "rm -rf dist && webpack --mode production --config webpack.prod.js && webpack --mode production --config webpack.server.js",
     "serve": "webpack serve --open --config webpack.config.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "",
-  "license": "ISC",
+  "author": "Kenny William Nyallau",
+  "license": "MIT",
   "dependencies": {
     "@loaders.gl/core": "^3.0.12",
     "@loaders.gl/gltf": "^3.0.12",
@@ -20,6 +20,7 @@
     "deck.gl": "^8.6.3",
     "dotenv": "^10.0.0",
     "express": "^4.17.1",
+    "pm2": "^5.1.2",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
     "react-hot-loader": "^4.13.0",
