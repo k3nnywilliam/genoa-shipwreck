@@ -9,7 +9,7 @@ module.exports = {
   externals: {
     cesium: "Cesium",
   },
-  mode: 'development',
+  mode: 'production',
   entry: './src/index.js',
   devServer: {
     static: {
