@@ -1,5 +1,7 @@
 # Underwater Lidar Viewer
 
+<a href="https://genoa-ship.herokuapp.com/" target="_blank">Click here to try the app!</a>
+
 ![Alt text](screenshots/shipwreck-record.gif?raw=true "Title")
 
 ### Project Description
