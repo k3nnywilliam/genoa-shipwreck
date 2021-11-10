@@ -4,7 +4,6 @@ const HtmlTagsPlugin = require("html-webpack-tags-plugin");
 const CopyWebpackPlugin = require("copy-webpack-plugin");
 const path = require('path');
 const Dotenv = require('dotenv-webpack');
-const nodeExternals = require('webpack-node-externals');
 
 module.exports = {
     externals: {
